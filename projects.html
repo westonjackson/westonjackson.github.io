@@ -1,94 +1,39 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weston Jackson</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
-     
-       
-  <body>
-    <div class="fixed">
-		<nav class="top-bar" data-topbar role="navigation">
-		  <section class="top-bar-section">
-			<ul class="left">
-			  <li><a href="index.html">Home</a></li>
-			  <li><a href="projects.html">Projects</a></li>
-			  <li><a href="research.html">Research</a></li>
-			  <li><a href="courses.html">Courses</a></li>
-			  <li><a href="music.html">Music</a></li>
-			</ul>
-			<ul class="right">
-			  <li><a href="New_Resume.pdf">Resume</a></li>
-			</ul>
-		  </section>
-		</nav>
-	</div>
- 
-       <div class="row">
+
+<head>
+<title></title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
+</head>
+
+
+<div id="header"></div>
+<body>
+  <div class="row">
 		<BR>
 		<BR>
         <div class="large-9 large-offset-1 columns"> 
-          <h1 style="text-align: center"> Projects </h1>
-          
-          <h3>Surveys</h3>
+          <h2 style="text-align: center"> projects </h2>
           <ul>
-          
-          <li><p><a href="first_order_survey.pdf"> First-Order Optimization Methods</a>: Survey on paper the properties of a variety of first-order methods, 
-          primarily focusing on naive and accelerated gradient descent, mirror descent, and stochastic gradient descent algorithms. The 
-          discussion includes descriptions of the classical algorithms as well as breakthroughs (Katyusha, variance reduction, linear coupling, momentum). </p>
+          <li><p><b>First-Order Optimization Methods</b>: Survey on paper the properties of a variety of first-order methods, primarily focusing on naive and accelerated gradient descent, mirror descent, and stochastic gradient descent algorithms. The 
+          discussion includes descriptions of the classical algorithms as well as breakthroughs (Katyusha, variance reduction, linear coupling, momentum). <a href="pdfs/first_order_survey.pdf"> [PDF] </a></p>
 		  
-		  <li><p><a href="AdvancedAlgorithmsFinal.pdf"> Faster Linear Programming</a>: Survey on methods for fast linear programming, 
-		  focusing predominantly on the evolution of interior point methods in the last thirty years. </p>
-          </ul>
+		      <li><p><b>Faster Linear Programming</b>: Survey on methods for fast linear programming, 
+		      focusing predominantly on the evolution of interior point methods in the last thirty years.<a href="../pdfs/AdvancedAlgorithmsFinal.pdf"> [PDF] </a></p>
           
-          <h3>Computer Graphics</h3>
-          <ul>
-          
-          <li><p><a href="https://github.com/westonjackson/TeapotDeath5000">TeapotCollector5000</a>: Final project for Computer Graphics, made with OpenGL and GLUT frameworks.</p>
-          </ul>
+          <li><p><b>TeapotCollector5000</b>: Final project for Computer Graphics, made with OpenGL and GLUT frameworks.<a href="https://github.com/westonjackson/TeapotDeath5000"> [Repo] </a></p>
 
-          <h3>Old Programs</h3> 
-          <ul>
-          <li><p><a href="Scraper.jar" download>Linkedin Scraper</a>: Uses Google Search and Selenium Webdriver to find LinkedIn profiles matching desired key words. </p>
-          
-          <li>
-          <p><a href="Dijkstra.zip" download>U.S. Cities: Shortest Path</a>: Implementation of Dijkstra's algorithm. </p>
-          <li>
-          <p><a href="Kruskal.zip" download>U.S. Cities: Spanning Tree</a>: Implementation of Kruskal's algorithm. </p>
-          
-          <li><p><a href="TSP.jar" download>Traveling Salesman Simulator</a>: Implementation of nearest-neighbor and brute force algorithms for the Traveling Salesman problem.</p>
-          
-          <li><p><a href="HuffmanTester.jar" download>Huffman Tree Maker</a>: Implementation of the Huffman coding algorithm. </p>
-          
-          <li><p><a href="RealPokerTest.jar" download>Five Card Stud Video Poker</a>: Five card stud poker simulator. Final project for Intro to Computer Science.  </p>
+          <li><p><b>Linkedin Scraper</b>: Uses Google Search and Selenium Webdriver to find LinkedIn profiles matching desired key words. <a href="Scraper.jar" download>[App]</a></p>
           </ul>
         </div>
         
       </div>
-        
-      
-       
-      
-      <footer class="row">
-        <div class="large-12 columns">
-          <hr/>
-          <div class="row">
-            <div class="large-6 columns">
-              <p>© Copyright Weston Jackson</p>
-            </div>
-            <div class="large-6 columns">
-              <ul class="inline-list right">
-              	<li><a href="https://github.com/westonjackson">GitHub</a></li>
-                <li><a href="http://www.linkedin.com/pub/weston-jackson/79/92b/b77/">LinkedIn</a></li>
-                <li><a href="mailto:wjj2106@columbia.edu" onclick="ga('send', 'event', 'link', 'click', 'footer email');">Email</a></li>
-                <li><a href="https://soundcloud.com/wjj2106">Soundcloud </a></li>
-              </ul>
-            </div>
-          </div>
-        </div> 
-      </footer>
    </body>
+  <div id="footer"></div>
 </html>

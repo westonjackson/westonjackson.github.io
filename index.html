@@ -1,101 +1,38 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weston Jackson</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
-     
-       
-  <body>
-	<div class="fixed"> 
-		<nav class="top-bar" data-topbar role="navigation">
-		  <section class="top-bar-section">
-			<ul class="left">
-			  <li><a href="#">Home</a></li>
-			  <li><a href="projects.html">Projects</a></li>
-			  <li><a href="research.html">Research</a></li>
-			  <li><a href="courses.html">Courses</a></li> 
-			  <li><a href="music.html">Music</a></li>
-			</ul>
-			<ul class="right">
-			  <li><a href="New_Resume.pdf">Resume</a></li>
-			</ul>
-		  </section>
-		</nav>  
-	</div>
 
+<head>
+<title></title>
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
+</head>
+
+
+<div id="header"></div> 
+  <body>
 	<div class="row"> 
 		<BR>
 		<BR> 
         <div class="large-9 large-offset-1 columns">
-          <h1 style="text-align: center"> Blog </h1>
+          <h2 style="text-align: center"> about me </h2>                    
+          <p> I live in New York City. I study computer science. I am interested in distributed systems, machine learning, and algorithms. I also like playing basketball. Enjoy my site </p>
           
-          <h3>I Graduated!</h3>
-          <p>with a degree in Computer Science. </p>
-          <img src="img/graduation.jpg">
-          <BR> 
-          <BR> 
-          
-          <h3>Internship at AppNexus</h3>
-          
-          <p>This summer I was a Software Engineering Intern on AppNexus's 
-          Data Platform as a Service team! </p>
-          <p>Read about my experience <a href="http://blog.appnexus.com/2016/my-summer-tackling-big-data-systems/">here</a>.</p> 
-          <img src="img/AppNexus2.jpg">
-          <img src="img/AppNexus3.jpg">
-          <BR> 
-          <BR> 
-			
-	      <h3>Study Abroad in Budapest</h3>
-          
-          <p>I spent the Spring of my junior year in College in Budapest. I learned a ton at the
-          AIT program in Budapest and also travelled all over Europe! I spent time in Vienna, 
-          Amsterdam, Berlin, Oslo, Bergen, Copenhagen, Prague, and Barcelona!</p>
-          <img src="img/Abroad1.jpg">
-          <img src="img/Abroad2.jpg">
-          <BR> 
-          <BR> 
-          <h3>About Me</h3>
-          
-          <p>Welcome to my new and improved website, made using Foundation!</p>
-          
-          <p>I am a Computer Science major at Columbia University. I lived 
-          almost my entire life before college in Studio City, California, 
-          a suburb of Los Angeles where life revolves around "hanging out" and 
-          "being chill". Now that I live in New York City, life is more fast-paced, 
-          but I still enjoy a "chill" day when I can.</p> 
-          
-          <p>At Columbia, I have enjoyed studying many different subjects, but my favorite
-          subjects are Computer Science, Math, and philosophy. Outside of school, I like 
-          hip-hop, music, and playing basketball and golf.</p>
-          
-          <img src="img/Puerto.png">
-          
+          <img src="img/NewZealand.jpg">
+
+          <BR> </BR>
+          <p> -Weston </p>
+
           <p></p>   
           
         </div>        
       </div>
-      
-      <footer class="row">
-        <div class="large-12 columns">
-          <hr/>
-          <div class="row">
-            <div class="large-6 columns">
-              <p>© Copyright Weston Jackson</p>
-            </div>
-            <div class="large-6 columns">
-              <ul class="inline-list right">
-                <li><a href="https://github.com/westonjackson">GitHub</a></li>
-                <li><a href="http://www.linkedin.com/pub/weston-jackson/79/92b/b77/">LinkedIn</a></li>
-                <li><a href="mailto:wjj2106@columbia.edu" onclick="ga('send', 'event', 'link', 'click', 'footer email');">Email</a></li>
-                <li><a href="https://soundcloud.com/wjj2106">Soundcloud </a></li>
-              </ul>
-            </div>
-          </div>
-        </div> 
-      </footer>
    </body>
+  <div id="footer"></div>
 </html>
