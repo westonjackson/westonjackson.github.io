@@ -1,81 +1,146 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-<title></title>
-<div id="header">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weston Jackson</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/vendor/modernizr.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Weston Jackson</title>
+  <link rel="stylesheet" href="css/modern.css" />
+</head>
 
-    <div class="fixed">
-    <nav class="top-bar" data-topbar role="navigation">
-      <section class="top-bar-section">
-      <ul class="left">
-        <li><a href="index.html">home</a></li>
-        <li><a href="projects.html">projects</a></li>
-        <li><a href="stuff.html">stuff</a></li>
-      </ul>
-      <ul class="right">
-        <li><a href="pdfs/weston-resume.pdf">resume</a></li>
-      </ul>
-      </section>
-    </nav>
-  </div>
-</div>
 <body>
-  <div class="row">
-		<BR>
-		<BR>
-        <div class="large-9 large-offset-1 columns"> 
-          <h2 style="text-align: center"> projects </h2>
-          <ul>
-          <li><p><b>[2022] Wordle Solver</b>: Tool that solves Wordle in 3.63 guesses on average. Calculate the distribution of letters per-position in the corpus. Choose the candidate that maximizes the joint probability.  <a href="https://github.com/westonjackson/wordle_solver/blob/main/Wordle_Solver.ipynb">[Colab]</a></p>
+  <nav>
+    <div class="container">
+      <a href="index.html" class="nav-brand">WJ</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="stuff.html">Resources</a></li>
+        <li><a href="pdfs/weston-resume.pdf">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
 
-          <li><p><b>[2021] Fantasy Basketball Optimization</b>: Tool that formulates Fantasy Basketball 9CAT lineup selection as an Integer Programming Problem. Allows users to specify a list of players and can then solve the corresponding optimization problem.   <a href="https://github.com/westonjackson/fantasy-basketball/blob/main/fantasy.ipynb">[Colab]</a></p>
-
-          <li><p><b>[2019] Approximate Near Neighbor Seach under l-infinity</b>: Covers Indyk's data structure for l-infinity approximate near neighbor search (c-ANN). Proposes two alternative data structures for c-ANN under l-infinity for low-dimensional spaces. Also covers hardness of c-ANN under l-infinity for c < 3.   <a href="pdfs/AdvancedDataStructuresProject.pdf">[PDF]</a></p>         
-
-          <li><p><b>[2019] Identity Testing</b>: Survey on sublinear algorithms for both identity and uniformity testing. Includes upper and lower bounds for collision-based testers, coincidence-based testers, and instance-optimal testers. <a href="pdfs/AlgorithmsForMassiveDataFinal.pdf">[PDF]</a></p>          
-
-          <li><p><b>[2018] Deep Learning for Network Traffic Classification</b>: Covers predicting Server Name Identification (SNI) using HTTPS features (packet sizes, payload sizes, inter-arrival times, directionality). Compares machine learning and deep learning classifiers such as Random Forest, CNN, RNN, CNN-RNN, and Ensemble. <a href="pdfs/Deep_Learning.pdf">[PDF]</a> <a href="pdfs/Deep_Learning_Poster.pdf">[Poster]</a> <a href="https://github.com/niloofarbayat/NetworkClassification">[Repo]</a></p>
-
-          <li><p><b> [2017] Microbiome Clustering</b>: Uses unsupervised machine learning 
-          techniques to better understand and describe microbiome samples. Advised by Professor Itsik Pe'er at Columbia University. Published in Journal of Healthcare Engineering, vol. 2017. <a href="pdfs/2_Way_k_Means_Final.pdf"> [PDF] </a> <a href="https://github.com/westonjackson/2-Way-Cluster-Assignment"> [Repo] </a> <a href="https://www.youtube.com/watch?v=4DuilMhw7Uk"> [Video] </a> </p>
-
-          <li><p><b>[2017] First-Order Optimization Methods</b>: Survey on properties of a variety of first-order methods, including naive and accelerated gradient descent, mirror descent, and stochastic gradient descent algorithms. Includes descriptions of the classical algorithms as well as breakthroughs (Katyusha, variance reduction, linear coupling, momentum). <a href="pdfs/first_order_survey.pdf">[PDF]</a></p>
-		  
-		      <li><p><b>[2017] Faster Linear Programming</b>: Survey on methods for fast linear programming, 
-		      focusing predominantly on the evolution of interior point methods in the last thirty years. <a href="../pdfs/AdvancedAlgorithmsFinal.pdf">[PDF]</a></p>
-
-          <li><p><b> [2017] Alarm Fatigue</b>: Explores the issue of alarm fatigue in
-           physiological monitoring systems in hospitals, and to approach the
-           problem of alarm fatigue from the perspective of machine learning.<a href="pdfs/Alarm_Fatigue.pdf"> [PDF] </a> </p>
-
-          <li><p><b>[2016] TeapotCollector5000</b>: Final project for Computer Graphics, made with OpenGL and GLUT frameworks. <a href="https://github.com/westonjackson/TeapotDeath5000">[Repo]</a> </p>
-
-          <li><p><b>[2015] Linkedin Scraper</b>: Uses Google Search and Selenium Webdriver to find LinkedIn profiles matching desired key words. <a href="https://github.com/westonjackson/LinkedinScraper2">[Repo]</a> </p>
-          </ul>
-        </div>
-        
-      </div>
-   </body>
-      <footer class="row">
-        <div class="large-12 columns">
-          <hr/>
-          <div class="row">
-            <div class="large-6 columns">
-              <p></p>
-            </div>
-            <div class="large-6 columns">
-              <ul class="inline-list right">
-                <li><a href="https://github.com/westonjackson">GitHub</a></li>
-                <li><a href="http://www.linkedin.com/pub/weston-jackson/79/92b/b77/">LinkedIn</a></li>
-              </ul>
-            </div>
+  <main>
+    <div class="container">
+      <h2>Projects</h2>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-year">2022</div>
+          <h4>Wordle Solver</h4>
+          <p>Tool that solves Wordle in 3.63 guesses on average. Calculates the distribution of letters per-position in the corpus and chooses the candidate that maximizes the joint probability.</p>
+          <div class="project-links">
+            <a href="https://github.com/westonjackson/wordle_solver/blob/main/Wordle_Solver.ipynb">Colab Notebook</a>
           </div>
-        </div> 
-      </footer>
+        </div>
+
+        <div class="project-card">
+          <div class="project-year">2021</div>
+          <h4>Fantasy Basketball Optimization</h4>
+          <p>Formulates Fantasy Basketball 9CAT lineup selection as an Integer Programming Problem. Allows users to specify a list of players and solves the corresponding optimization problem.</p>
+          <div class="project-links">
+            <a href="https://github.com/westonjackson/fantasy-basketball/blob/main/fantasy.ipynb">Colab Notebook</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-year">2019</div>
+          <h4>Approximate Near Neighbor Search under l-infinity</h4>
+          <p>Covers Indyk's data structure for l-infinity approximate near neighbor search. Proposes two alternative data structures for c-ANN under l-infinity for low-dimensional spaces and covers hardness of c-ANN.</p>
+          <div class="project-links">
+            <a href="pdfs/AdvancedDataStructuresProject.pdf">Paper</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-year">2019</div>
+          <h4>Identity Testing</h4>
+          <p>Survey on sublinear algorithms for identity and uniformity testing. Includes upper and lower bounds for collision-based, coincidence-based, and instance-optimal testers.</p>
+          <div class="project-links">
+            <a href="pdfs/AlgorithmsForMassiveDataFinal.pdf">Paper</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-year">2018</div>
+          <h4>Deep Learning for Network Traffic Classification</h4>
+          <p>Predicts Server Name Identification (SNI) using HTTPS features. Compares machine learning and deep learning classifiers including Random Forest, CNN, RNN, CNN-RNN, and Ensemble methods.</p>
+          <div class="project-links">
+            <a href="pdfs/Deep_Learning.pdf">Paper</a>
+            <a href="pdfs/Deep_Learning_Poster.pdf">Poster</a>
+            <a href="https://github.com/niloofarbayat/NetworkClassification">Repository</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-year">2017</div>
+          <h4>Microbiome Clustering</h4>
+          <p>Uses unsupervised machine learning to analyze microbiome samples. Advised by Professor Itsik Pe'er at Columbia. Published in Journal of Healthcare Engineering, vol. 2017.</p>
+          <div class="project-links">
+            <a href="pdfs/2_Way_k_Means_Final.pdf">Paper</a>
+            <a href="https://github.com/westonjackson/2-Way-Cluster-Assignment">Repository</a>
+            <a href="https://www.youtube.com/watch?v=4DuilMhw7Uk">Video</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-year">2017</div>
+          <h4>First-Order Optimization Methods</h4>
+          <p>Survey on properties of first-order methods including naive and accelerated gradient descent, mirror descent, and SGD. Covers Katyusha, variance reduction, linear coupling, and momentum.</p>
+          <div class="project-links">
+            <a href="pdfs/first_order_survey.pdf">Paper</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-year">2017</div>
+          <h4>Faster Linear Programming</h4>
+          <p>Survey on methods for fast linear programming, focusing on the evolution of interior point methods over the last thirty years.</p>
+          <div class="project-links">
+            <a href="pdfs/AdvancedAlgorithmsFinal.pdf">Paper</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-year">2017</div>
+          <h4>Alarm Fatigue</h4>
+          <p>Explores the issue of alarm fatigue in physiological monitoring systems in hospitals, approaching the problem from a machine learning perspective.</p>
+          <div class="project-links">
+            <a href="pdfs/Alarm_Fatigue.pdf">Paper</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-year">2016</div>
+          <h4>TeapotCollector5000</h4>
+          <p>Final project for Computer Graphics, created with OpenGL and GLUT frameworks. An interactive 3D graphics application.</p>
+          <div class="project-links">
+            <a href="https://github.com/westonjackson/TeapotDeath5000">Repository</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-year">2015</div>
+          <h4>LinkedIn Scraper</h4>
+          <p>Uses Google Search and Selenium Webdriver to find LinkedIn profiles matching desired keywords. Automated profile discovery tool.</p>
+          <div class="project-links">
+            <a href="https://github.com/westonjackson/LinkedinScraper2">Repository</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div></div>
+      <ul class="footer-links">
+        <li><a href="https://github.com/westonjackson">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/pub/weston-jackson/79/92b/b77/">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>
